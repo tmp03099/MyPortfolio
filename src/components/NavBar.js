@@ -8,7 +8,7 @@ import logoImg from '../img/0001.png'
 function NavBar(){
     return(
         <>
-       
+    
             <Navbar sticky='top' bg="light" expand={'md'} className="mb-3">
                 <Container fluid>
                     <Navbar.Brand href="#">
