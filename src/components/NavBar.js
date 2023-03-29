@@ -1,6 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-scroll';
 import logoImg from '../img/0001.png'
@@ -8,11 +7,10 @@ import logoImg from '../img/0001.png'
 function NavBar(){
     return(
         <>
-    
-            <Navbar sticky='top' bg="light" expand={'md'} className="mb-3">
+            <Navbar sticky='top' expand={'md'} className="nav d-flex align-item-center" >
                 <Container fluid>
                     <Navbar.Brand href="#">
-                        <img src={logoImg} style={{width:50}}/>
+                        <img src={logoImg} className="logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
@@ -20,20 +18,12 @@ function NavBar(){
                         aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                         placement="end"
                     >
-                        {/* <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                Offcanvas
-                            </Offcanvas.Title>
-                        </Offcanvas.Header> */}
-                        <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Link activeClass="active" smooth spy to="home" href="/#home">Home</Link>
-                                <Link activeClass="active" smooth spy to="about" href="/#about">About</Link>
-                                <Link activeClass="active" smooth spy to="projects" href="/#projects">Work</Link>
-                                <Link href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</Link>
-                            </Nav>
-                        </Offcanvas.Body>
-
+                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " activeClass="active" smooth spy to="home" href="/#home">Home</Link>
+                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" activeClass="active" smooth spy to="about" href="/#about">About</Link>
+                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" activeClass="active" smooth spy to="projects" href="/#projects">Work</Link>
+                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</Link>
+                        </Nav>
                     </Navbar.Offcanvas>
                 </Container>
             </Navbar>

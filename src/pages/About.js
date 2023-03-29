@@ -3,7 +3,7 @@ function About(){
     return (
         <section id="about">
             <h2 className="heading">About Me</h2>
-            <div className="d-flex ">
+            <div className="d-flex">
                 <div className="about-content">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -16,7 +16,7 @@ function About(){
                         of Lorem Ipsum.
                     </p>
                     <p>Here are a few technologies I've been working with recently</p>
-                    <div className="d-flex">
+                    <div className="d-flex justify-content-center">
                         <ul>
                             <li> JavaSCript </li>
                             <li> React </li>
@@ -31,7 +31,7 @@ function About(){
                     </div>
                 </div>
                 <div className="about-img">
-                    <img style={{width: 200}} src="https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?w=2000" />
+                    <img style={{width: 200, height:300}} src="https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?w=2000" />
                 </div>
             </div>
         </section>
