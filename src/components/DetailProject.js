@@ -9,16 +9,19 @@ function DetailProject({project}){
                 <img src={project.src} style={{width:400}}/>
                 <div className='captionImg position-absolute'>
 
-                    <div>
-                        <p>Title</p>
-                        <p>Python | Linux</p>
+                    
+                        <p>{project.title}</p>
+                        <p>{project.programs}</p>
+                        <div>
+
                         <Button>Check out</Button>
-                    </div>
+                        </div>
             
                 </div>
             </div>
             
         </section>
+       
     )
 
 }

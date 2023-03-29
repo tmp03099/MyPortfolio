@@ -1,4 +1,5 @@
 export const imgData = [
+    { src: '../src/img/hotelProject.jpg', title: 'Hotel Booking', programs: 'Java RestAPI Spring Boot Angular Typescript PrimeNG ', link:'' , description: 'A version web Hotel Booking that allow you fill in the date to search available room, filter out and booking'},
     { src: 'https://picsum.photos/id/1018/1920/1080/', title: 'Pokemon Card Game', programs: 'HTML5 | CSS3 | Bootstraps | JavaScript | VS Code', link:''},
     { src: 'https://picsum.photos/id/1018/1920/1080/', title: 'Router Stock App', programs: 'React | Router | API | Axios' , link:''},
     { src: 'https://picsum.photos/id/1018/1920/1080/', title: 'Disney Character', programs: 'React | Router | API | Axios' , link:''},

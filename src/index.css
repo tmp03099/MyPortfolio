@@ -17,11 +17,34 @@
     height:100vh;
 }
 
+/* Font family */
+h5{
+    font-family: 'Syne Mono';
+}
+
+h1{
+    font-family:'Patua One';
+}
+
+span{
+    font-family: 'VT323';
+    font-size: x-large;
+}
+ 
+p{
+    font-family: 'inter';
+}
+
+
 /* Nav Bar */
 .logo{
     width: 50px;
     border: 1px inset yellow;
     border-radius: 100%;
+}
+
+.navText{
+    align-items: center;
 }
 
 .hotel-img{

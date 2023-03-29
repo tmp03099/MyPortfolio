@@ -1,4 +1,3 @@
-
 import FeaturedProject from '../components/FeaturedProject';
 import Projects from '../components/Projects';
 

@@ -8,8 +8,8 @@ function Projects(){
         <section className="d-flex flex-column m-5">
             <h2>OTHER PROJECTS</h2>
             <div className="d-flex flex-wrap justify-content-center align-item-center animated">
-                {project.map((ele)=>(
-                    <DetailProject project={ele}/>
+                {project.map((ele, idx)=>(
+                     <DetailProject project={ele} key={idx}/>
                 ))}
             </div>
         </section>

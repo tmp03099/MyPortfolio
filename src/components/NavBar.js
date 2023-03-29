@@ -1,8 +1,8 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import { Link } from 'react-scroll';
-import logoImg from '../img/0001.png'
+import { Link as LinkScroll } from 'react-scroll';
+import logoImg from '../img/0001.png';
 
 function NavBar(){
     return(
@@ -18,11 +18,11 @@ function NavBar(){
                         aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                         placement="end"
                     >
-                        <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " activeClass="active" smooth spy to="home" href="/#home">Home</Link>
-                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" activeClass="active" smooth spy to="about" href="/#about">About</Link>
-                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" activeClass="active" smooth spy to="projects" href="/#projects">Work</Link>
-                            <Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</Link>
+                        <Nav className="navText justify-content-end flex-grow-1 pe-3">
+                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " activeClass="active" smooth spy to="home" duration={100}>Home</LinkScroll>
+                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" smooth spy to="about" duration={100}>About</LinkScroll>
+                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" smooth spy to="projects" duration={100}>Work</LinkScroll>
+                            <Nav.Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</Nav.Link>
                         </Nav>
                     </Navbar.Offcanvas>
                 </Container>

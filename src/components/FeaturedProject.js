@@ -4,16 +4,18 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import hotelImg from '../img/hotelProject.jpg';
 
 function FeaturedProject(){
+ 
     return(
         <section className='d-flex justify-content-center'>
             <div className="d-flex project-1">
-                <div className="back-img position-absolute">
+                <div className="back-img position-relative">
                     <img className="hotel-img" src={hotelImg} alt="hotel.img"/>
                 </div>
-                <div className="front-content position-relative">
+                <div className="front-content position-relative text-white">
                     <p>Feature</p>
-                    <h3>Hotel Booking</h3>
-                    <div class="description">
+                    
+                    <h3></h3>
+                    <div className="description">
                         description here
                     </div>
                     <ul className="tech d-flex list-unstyled ">
