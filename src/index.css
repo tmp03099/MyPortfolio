@@ -1,7 +1,7 @@
 #home{
     background-color:#EF7C8E ;
     width: 100vw;
-    height: 100vh
+    height: 100vh;
 }
 
 #about{
@@ -18,5 +18,33 @@
 }
 
 .hotel-img{
-    width: 200px;
+    width: 300px;
+}
+/* Features */
+.backImg img{
+    width:100%;
+}
+
+/* projects */
+
+.storeImg img {
+    width: 100%;
+}
+
+.captionImg {
+  top: 0; 
+  left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex; 
+  justify-content: center;
+   align-items: center;
+   visibility: none; 
+   opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+.storeImg:hover .captionImg{
+    visibility: visible; opacity: 1;
 }
