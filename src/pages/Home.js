@@ -3,7 +3,10 @@ import techImg from "../img/EF7C8E.jpg";
 
 function Home() {
   return (
-    <section id="home" className="w-screen h-screen py-5">
+    <section
+      id="home"
+      className="w-screen h-screen py-5 flex flex-col items-center"
+    >
       <h5>Hi, I am </h5>
       <h1> My Phung Tieu </h1>
       <h1>Frontend Developer | Software Developer</h1>

@@ -4,36 +4,32 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function FeaturedProjectSmall({ project }) {
   return (
-    <div className="flex project-1 my-5 justify-center">
-      <div className="back-img relative left-1/4">
-        <img
-          className="blur-sm w-full"
-          style={{ width: 400 }}
-          src={project.src}
-          alt="hotel.img"
-        />
-      </div>
+    <div
+      className="flex flex-col p-3 m-2 justify-center 
+      relative isolate overflow-hidden bg-gray-900 rounded-2xl"
+    >
       <div
-        className="front-content relative text-white right-1/4 opacity-70 bg-lime-900"
-        style={{ width: 400 }}
+        className="flex bg-contain bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${project.src})` }}
       >
-        <p>Feature</p>
-
-        <h3>{project.title}</h3>
-        <div className="description">{project.description}</div>
-        <div>{project.programs}</div>
-        <ul className="flex list-none">
-          <li>
-            <a href={project.github}>
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-          <li>
-            <a href={project.extenal}>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </a>
-          </li>
-        </ul>
+        <div className="flex flex-col text-white bg-gray-900 opacity-75 text-center">
+          <p className="mb-1">Feature Project</p>
+          <h3 className="mb-4">{project.title}</h3>
+          <div className="description">{project.description}</div>
+          <div className="my-4">{project.programs}</div>
+          <ul className="flex list-none text-xl">
+            <li>
+              <a href={project.github}>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </li>
+            <li className="mx-10">
+              <a href={project.extenal}>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
