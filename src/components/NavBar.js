@@ -7,10 +7,10 @@ import logoImg from '../img/0001.png';
 function NavBar(){
     return(
         <>
-            <Navbar sticky='top' expand={'md'} className="nav d-flex align-item-center" >
+            <Navbar sticky='top' expand={'md'} className="nav flex item-center" >
                 <Container fluid>
                     <Navbar.Brand href="#">
-                        <img src={logoImg} className="logo"/>
+                        <img src={logoImg} className="logo w-14 border-amber-300 rounded-full "/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
@@ -18,11 +18,11 @@ function NavBar(){
                         aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                         placement="end"
                     >
-                        <Nav className="navText justify-content-end flex-grow-1 pe-3">
-                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " activeClass="active" smooth spy to="home" duration={100}>Home</LinkScroll>
-                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" smooth spy to="about" duration={100}>About</LinkScroll>
-                            <LinkScroll className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning" smooth spy to="projects" duration={100}>Work</LinkScroll>
-                            <Nav.Link className="fs-5 mx-4 fw-bold .text-reset text-decoration-none text-warning " href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</Nav.Link>
+                        <Nav className="align-center justify-end grow pe-3">
+                            <LinkScroll className="text-xl mx-4 font-bold no-underline text-amber-300 " activeClass="active" smooth spy to="home" duration={100}>Home</LinkScroll>
+                            <LinkScroll className="text-xl mx-4 font-bold no-underline text-amber-300" smooth spy to="about" duration={100}>About</LinkScroll>
+                            <LinkScroll className="text-xl mx-4 font-bold no-underline text-amber-300" smooth spy to="projects" duration={100}>Work</LinkScroll>
+                            <a className="text-xl mx-4 font-bold no-underline text-amber-300" href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub">Resume</a>
                         </Nav>
                     </Navbar.Offcanvas>
                 </Container>

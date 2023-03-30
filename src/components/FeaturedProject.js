@@ -6,26 +6,26 @@ import hotelImg from '../img/hotelProject.jpg';
 function FeaturedProject(){
  
     return(
-        <section className='d-flex justify-content-center'>
-            <div className="d-flex project-1">
-                <div className="back-img position-relative">
-                    <img className="hotel-img" src={hotelImg} alt="hotel.img"/>
+        <section className='flex justify-center'>
+            <div className="flex project-1">
+                <div className="back-img relative left-1/4">
+                    <img className="blur-sm w-full" style={{width:400}} src={hotelImg} alt="hotel.img"/>
                 </div>
-                <div className="front-content position-relative text-white">
+                <div className="front-content relative text-white right-1/4 opacity-70 bg-lime-900" style={{width:400}}>
                     <p>Feature</p>
                     
                     <h3></h3>
                     <div className="description">
                         description here
                     </div>
-                    <ul className="tech d-flex list-unstyled ">
+                    <ul className="tech flex list-none ">
                         <li>Angular</li>
                         <li>Rest API</li>
                         <li>IntelliJ</li>
                         <li>TypeScript</li>
                         <li>PrimeNG</li>
                     </ul>
-                    <ul className="d-flex list-unstyled">
+                    <ul className="flex list-none">
                         <li>
                             <a href='https://github.com/tmp03099/BookingApplication'>
                                 <FontAwesomeIcon icon={faGithub}/>

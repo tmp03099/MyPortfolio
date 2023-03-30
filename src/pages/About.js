@@ -1,8 +1,8 @@
 function About(){
     return (
-        <section id="about">
+        <section id="about" className="w-screen h-screen">
             <h2 className="heading">About Me</h2>
-            <div className="d-flex">
+            <div className="flex">
                 <div className="about-content">
                     <p>
                         Hi! My name is Phung is a junior developer and enjoying create creative website. 
@@ -17,7 +17,7 @@ function About(){
 
                         Here are a few technologies I've been working with recently
                     </p>
-                    <div className="d-flex justify-content-center">
+                    <div className="flex justify-center">
                         <ul>
                             <li> JavaSCript </li>
                             <li> React </li>
