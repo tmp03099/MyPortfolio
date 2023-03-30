@@ -1,4 +1,4 @@
-import DetailProject from "./DetailProject";
+import DetailProject from "./detail-project/DetailProject";
 import { useState, useEffect } from "react";
 import { getProjects } from "../services/project-api";
 

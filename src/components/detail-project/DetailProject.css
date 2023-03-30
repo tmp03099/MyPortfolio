@@ -1,0 +1,13 @@
+.hide-section {
+  height: 0;
+  opacity: 0;
+
+  transition-property: background-color, opacity, height;
+  transition-duration: 1s;
+}
+
+.hover {
+  height: 50%;
+  opacity: 1;
+  background-color: white;
+}
