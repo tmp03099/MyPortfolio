@@ -27,7 +27,7 @@ function FeaturedProjectMedium({ project }) {
           </radialGradient>
         </defs>
       </svg>
-      <div className="relative vh-80 md:w-full xl:mt-5">
+      <div className="relative vh-80 w-1/2 lg:w-full xl:mt-5 ">
         <img
           className="rounded-md bg-white/5 ring-1 ring-white/10"
           width={400}
@@ -37,7 +37,7 @@ function FeaturedProjectMedium({ project }) {
         />
       </div>
       <div
-        className="front-content text-white text-right ml-5 max-w-md lg:mx-0 lg:flex-auto lg:py-24"
+        className="text-white text-right ml-5 max-w-md w-1/2 lg:w-full lg:mx-0 lg:flex-auto lg:py-24"
         width={200}
         height={400}
       >
