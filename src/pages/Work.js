@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import FeaturedProject from "../components/FeaturedProject";
 import Projects from "../components/Projects";
+import { useState, useEffect } from "react";
 import { getPokemon } from "../services/pokemon-api";
 import SearchPokemon from "../components/pokemon-abilities/SearchPokemons";
 
@@ -17,8 +17,11 @@ function Work() {
   }, []);
 
   return (
-    <section className="flex flex-col w-screen h-screen" id="projects">
-      <h2>Some Things I've Built</h2>
+    <section
+      className="flex flex-col w-screen h-screen items-center"
+      id="projects"
+    >
+      <h2 className="text-left lg:text-5xl p-5">Some Things I've Built</h2>
       <FeaturedProject />
       <SearchPokemon pokemon={pokemon} search={setPokemon} />
       <Projects />

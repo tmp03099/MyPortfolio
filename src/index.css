@@ -2,46 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-#home{
-    background-color:#EF7C8E ;
+#home {
+  background-color: #ef7c8e;
 }
 
-#about{
-    background-image: linear-gradient(to bottom, #ef7c8e, #f59999, #f8b4aa, #f9cfc2, #fae8e0);
+#about {
+  background-image: linear-gradient(
+    to bottom,
+    #ef7c8e,
+    #f59999,
+    #f8b4aa,
+    #f9cfc2,
+    #fae8e0
+  );
 }
 
-#projects{
-    background-image: linear-gradient(to bottom, #b6e2d3, #c8e3cc, #d9e4ca, #e7e4cd, #f2e5d4, #f3e1d2, #f4dcd1, #f3d8d1, #edccc7, #e7bfbe, #e0b3b7, #d8a7b1);
+#projects {
+  background-image: linear-gradient(
+    to bottom,
+    #b6e2d3,
+    #c8e3cc,
+    #d9e4ca,
+    #e7e4cd,
+    #f2e5d4,
+    #f3e1d2,
+    #f4dcd1,
+    #f3d8d1,
+    #edccc7,
+    #e7bfbe,
+    #e0b3b7,
+    #d8a7b1
+  );
 }
 
 /* Font family */
-h5, h2{
-    font-family: 'Syne Mono';
+h5 {
+  font-family: "Syne Mono";
 }
 
-h1{
-    font-family:'Patua One';
+h2 {
+  font-family: "Syne Mono";
 }
 
-span{
-    font-family: 'VT323';
-    font-size: x-large;
+h1 {
+  font-family: "Patua One";
 }
- 
-p{
-    font-family: 'inter';
+
+span {
+  font-family: "VT323";
+  font-size: x-large;
+}
+
+p {
+  font-family: "inter";
 }
 
 /* Detail Projects */
 .captionImg {
   background-color: rgba(255, 255, 255, 0.7);
-  visibility: none; 
+  visibility: none;
   opacity: 0;
   z-index: 2;
-
 }
 
-.storeImg:hover .captionImg{
-    visibility: visible; opacity: 1;
+.storeImg:hover .captionImg {
+  visibility: visible;
+  opacity: 1;
 }
-
