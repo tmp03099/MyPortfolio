@@ -24,7 +24,7 @@ function FeaturedProjectSmall({ project }) {
               </a>
             </li>
             <li className="mx-10">
-              <a href={project.extenal}>
+              <a href={project.link}>
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </a>
             </li>
