@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import techImg from "../img/EF7C8E.jpg";
 
 function Home({ quote }) {
