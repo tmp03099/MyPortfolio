@@ -19,7 +19,11 @@ function DetailProject({ project }) {
         onMouseEnter={mousetEnter}
         onMouseLeave={mouseLeave}
       >
-        <img src={project.src} style={{ width: 400, height: 320 }} />
+        <img
+          src={project.src}
+          style={{ width: 400, height: 320 }}
+          alt={project.alt}
+        />
         <div className="flex flex-col justify-between item-center w-full h-full transition duration-150 ease-in-out top-0 left-0 absolute border-2 border-separate border-slate-700">
           <div
             className={

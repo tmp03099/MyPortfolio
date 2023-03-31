@@ -33,7 +33,7 @@ function FeaturedProjectMedium({ project }) {
           width={400}
           height={400}
           src={project.src}
-          alt="hotel.img"
+          alt={project.alt}
         />
       </div>
       <div

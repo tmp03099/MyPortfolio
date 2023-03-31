@@ -12,6 +12,7 @@ function NavBar() {
           <Navbar.Brand href="#">
             <img
               src={logoImg}
+              alt="logo.img"
               className="logo w-14 border-amber-300 rounded-full ml-5"
             />
           </Navbar.Brand>

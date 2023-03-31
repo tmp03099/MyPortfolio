@@ -10,6 +10,7 @@ export const imgData = [
   {
     top: true,
     src: hotelProject,
+    alt: "hotel.img",
     title: "Hotel Booking",
     programs: "Java RestAPI Spring Boot Angular Typescript PrimeNG ",
     description:
@@ -20,6 +21,7 @@ export const imgData = [
   {
     top: true,
     src: connectFour,
+    alt: "connect4.img",
     title: "Connect Four Game",
     programs: "JavaScripts HTML5 CSS3 HTML-DOM ",
     description: `A website version connect four game with fully functional,
@@ -30,6 +32,7 @@ export const imgData = [
   {
     top: false,
     src: foodRandom,
+    alt: "foodRandom.img",
     title: "Food Random",
     programs: "Angular | Typescript | NgWheel | LocalStorage | JSON | PrimeNG",
     github: "https://github.com/tmp03099/FoodRandom",
@@ -38,6 +41,7 @@ export const imgData = [
   {
     top: false,
     src: disney,
+    alt: "disney.img",
     title: "Disney Character",
     programs: "React | Router | API | Axios",
     github: "https://github.com/tmp03099/Disney-Characters",
@@ -46,6 +50,7 @@ export const imgData = [
   {
     top: false,
     src: pokemon,
+    alt: "pokemon.img",
     title: "Pokemon Card Game",
     programs: "HTML5 | CSS3 | Bootstraps | JavaScript | VS Code",
     github: "https://github.com/tmp03099/memory-card-game",
@@ -54,6 +59,7 @@ export const imgData = [
   {
     top: false,
     src: barSite,
+    alt: "barsite.img",
     title: "Bar Website",
     programs: "HTML5 | CSS3 | jQuery | JavaScript",
     github: "https://github.com/tmp03099/BarWebPage.github.io",
@@ -62,6 +68,7 @@ export const imgData = [
   {
     top: false,
     src: starWars,
+    alt: "starWars.img",
     title: "Star Wars Pagination ",
     programs: "React | Router | API | Axios | Pagination",
     github: "https://github.com/tmp03099/STAR-WARS-API",

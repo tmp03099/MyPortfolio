@@ -47,6 +47,7 @@ function About() {
         <div className="flex m-4  justify-center">
           <img
             src={avatarImg}
+            alt="avatar.img"
             className="border-opacity-75 rounded-full border-yellow-300 border-dashed w-6/12 md:w-7/12  lg:mb-6 xl:mb-0 lg:w-full  lg:h-full"
           />
         </div>
