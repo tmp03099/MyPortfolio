@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import techImg from "../img/EF7C8E.jpg";
 
-function Home() {
+function Home({ quote }) {
   return (
     <section
       id="home"
@@ -14,9 +14,15 @@ function Home() {
         I am build and desgin things for website with user friendly interface
       </span>
       <br />
-      <img style={{ width: 500 }} src={techImg} alt="tech.img" />
+      <img
+        style={{ width: 500 }}
+        src={techImg}
+        alt="tech.img"
+        className="m-5"
+      />
       <br />
-      <Button>About me</Button>
+      <p className="w-3/4 text-md lg:text-xl text-center">"{quote.quote}"</p>
+      <Button className="mt-5">About me</Button>
     </section>
   );
 }

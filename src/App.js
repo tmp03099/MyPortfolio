@@ -25,7 +25,7 @@ function App() {
     <div className="App d-flex flex-column justify-center">
       <NavBar />
 
-      <Home />
+      <Home quote={quote} />
       <About />
       <Work />
       <Footer />
