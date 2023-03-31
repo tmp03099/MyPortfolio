@@ -6,6 +6,7 @@ import Work from "./pages/Work";
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import { getQuotes } from "./services/quotes-api";
+import SocialMedia from "./components/SocialMedia";
 
 function App() {
   const [quote, setQuote] = useState([]);
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Work />
       <Footer />
+      <SocialMedia />
     </div>
   );
 }

@@ -18,7 +18,7 @@ function Work() {
 
   return (
     <section
-      className="flex flex-col w-screen h-screen items-center"
+      className="flex flex-col w-screen h-auto items-center"
       id="projects"
     >
       <h2 className="text-left lg:text-5xl p-5">Some Things I've Built</h2>
