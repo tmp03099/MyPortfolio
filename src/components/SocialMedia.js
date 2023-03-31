@@ -5,20 +5,23 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function SocialMedia() {
   return (
-    <section className="w-screen h-auto">
+    <section className="w-screen h-auto sticky">
       <ul>
         <li>
-          <a href="">
+          <a className="text-3xl" href="https://github.com/tmp03099">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href="">
+          <a className="text-3xl" href="https://www.instagram.com/fung.09/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
         <li>
-          <a href="">
+          <a
+            className="text-3xl"
+            href="https://www.linkedin.com/in/my-phung-tieu-0bba22219/"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>

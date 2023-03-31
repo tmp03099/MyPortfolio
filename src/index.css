@@ -36,25 +36,36 @@
 }
 
 /* Font family */
-h5 {
+h5,
+.fontSyne {
   font-family: "Syne Mono";
 }
 
 h2 {
-  font-family: "Syne Mono";
+  font-family: "Silkscreen";
+}
+
+h3,
+.fontRib {
+  font-family: "Ribeye";
 }
 
 h1 {
-  font-family: "Patua One";
+  font-family: "Coiny";
 }
 
-span {
+span,
+.fontVT {
   font-family: "VT323";
-  font-size: x-large;
 }
 
-p {
-  font-family: "inter";
+p,
+.fontSourceCode {
+  font-family: "Source Code Pro", monospace;
+}
+
+.fontIncon {
+  font-family: "Inconsolata";
 }
 
 /* Detail Projects */

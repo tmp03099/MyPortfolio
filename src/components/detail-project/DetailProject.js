@@ -27,12 +27,12 @@ function DetailProject({ project }) {
               (hover ? " hover" : "")
             }
           >
-            <div className="my-5 text-black text-xl font-bold">
+            <div className="fontIncon my-5 text-black text-2xl font-extrabold">
               {project.title}
             </div>
-            <div className="mb-2 text-red-500 text-lg font-medium">
+            <span className="mb-3 text-rose-500 text-xl font-bold">
               {project.programs}
-            </div>
+            </span>
           </div>
           <div
             className={
@@ -41,7 +41,7 @@ function DetailProject({ project }) {
             }
           >
             <div className="mb-5">
-              <button className="rounded-lg hover:rounded-xl bg-lime-500 py-2 px-3 text-lg text-white ">
+              <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 text-lg text-white ">
                 CHECK OUT
               </button>
             </div>

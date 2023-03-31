@@ -1,5 +1,5 @@
 import hotelProject from "../img/hotelProject.jpg";
-import connect4 from "../img/connect4.jpg";
+import connectFour from "../img/connectFour.jpg";
 import pokemon from "../img/Pokemon.jpg";
 import starWars from "../img/starWars.jpg";
 import foodRandom from "../img/random.jpg";
@@ -15,14 +15,15 @@ export const imgData = [
     description:
       "A version web Hotel Booking that allow you fill in the date to search available room, filter out and booking",
     github: "https://github.com/tmp03099/BookingApplication",
-    link: "https://laplace-hotel.netlify.app/home",
+    link: "https://main--laplace-hotel.netlify.app/home",
   },
   {
     top: true,
-    src: connect4,
+    src: connectFour,
     title: "Connect Four Game",
     programs: "JavaScripts HTML5 CSS3 HTML-DOM ",
-    description: "A website version game ",
+    description: `A website version connect four game with fully functional,
+      sounds and animation. Developed responsive design for any devices  `,
     github: "https://github.com/tmp03099/connect-four-game.github.io",
     link: "https://tmp03099.github.io/connect-four-game.github.io/",
   },

@@ -27,7 +27,7 @@ function FeaturedProjectMedium({ project }) {
           </radialGradient>
         </defs>
       </svg>
-      <div className="relative vh-80 w-1/2 lg:w-full xl:mt-5 ">
+      <div className="flex relative vh-80 w-1/2 lg:w-full xl:mt-5 items-center ">
         <img
           className="rounded-md bg-white/5 ring-1 ring-white/10"
           width={400}
@@ -37,22 +37,24 @@ function FeaturedProjectMedium({ project }) {
         />
       </div>
       <div
-        className="text-white text-right ml-5 max-w-md w-1/2 lg:w-full lg:mx-0 lg:flex-auto lg:py-24"
+        className="text-white text-right ml-5 max-w-md w-1/2 lg:w-full lg:mx-0 lg:flex-auto lg:py-12"
         width={200}
         height={400}
       >
         <p className="mb-1">Feature Project</p>
-        <h3 className="mb-4">{project.title}</h3>
-        <div className="description">{project.description}</div>
-        <div className="my-4">{project.programs}</div>
-        <ul className="flex list-none text-xl">
+        <h3 className="my-4 text-xl lg:text-3xl">{project.title}</h3>
+        <div className="fontIncon lg:text-lg description">
+          {project.description}
+        </div>
+        <div className="fontIncon my-4">{project.programs}</div>
+        <ul className="flex list-none text-2xl">
           <li>
-            <a href={project.github}>
+            <a href={project.github} className="text-white">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li className="mx-10">
-            <a href={project.link}>
+            <a href={project.link} className="text-white">
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>
           </li>

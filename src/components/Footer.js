@@ -7,32 +7,35 @@ import Card from "react-bootstrap/Card";
 
 function Footer() {
   const CustomToggle = ({ children, eventKey }) => {
-    const decoratedOnClick = useAccordionButton(eventKey, () =>
+    const handleClick = useAccordionButton(eventKey, () =>
       console.log("totally custom!")
     );
 
     return (
-      <button
-        type="button"
-        style={{ backgroundColor: "pink" }}
-        onClick={decoratedOnClick}
-      >
+      <button className="bg-pink-300" type="button" onClick={handleClick}>
         {children}
       </button>
     );
   };
   return (
-    <section className="flex justify-center items-center">
+    <section className="flex justify-center items-center w-screen h-auto mt-5">
       <div className="border-4 outline-2 bg-gray-900 shadow-2xl rounded-3xl p-12 text-white text-center">
         <div>
-          <h3 className="text-amber-300">Interested in working together?</h3>
+          <h3 className="text-amber-300 mb-4">
+            Interested in working together?
+          </h3>
           <div className="flex justify-center">
             <Accordion>
               <Card>
-                <Card.Header>
+                <Card.Header className="p-0">
                   <CustomToggle eventKey="0">
-                    <h2 className="mx-4">STAY CONNECTED</h2>
-                    <FontAwesomeIcon icon={faPaperPlane} />
+                    <div className="flex items-center">
+                      <h2 className="mx-4 mb-0">STAY CONNECTED</h2>
+                      <FontAwesomeIcon
+                        icon={faPaperPlane}
+                        className="text-2xl px-2"
+                      />
+                    </div>
                   </CustomToggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
@@ -43,7 +46,7 @@ function Footer() {
               </Card>
             </Accordion>
           </div>
-          <p>
+          <p className="my-4">
             I'm currently looking for the opportunity to join a team of
             developer. If you think I might be a good fit, please contact me.
           </p>
@@ -51,11 +54,15 @@ function Footer() {
         <div className="flex items-center">
           <div className="relative w-16 h-16 bg-orange-700 border-2 rounded-full"></div>
           <div className="relative -left-9 text-xl font-bold">
-            <button>MY RESUME</button>
+            <a
+              className="text-white no-underline "
+              href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub"
+            >
+              MY RESUME
+            </a>
           </div>
         </div>
       </div>
-      <ContactForm />
     </section>
   );
 }

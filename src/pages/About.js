@@ -1,7 +1,10 @@
 import avatarImg from "../img/avatar.gif";
 function About() {
   return (
-    <section id="about" className="w-screen h-auto flex flex-col items-center">
+    <section
+      id="about"
+      className="w-screen md:h-screen flex flex-col items-center"
+    >
       <h2 className="text-left lg:text-5xl ">About Me</h2>
       <div className="flex flex-col lg:flex-row w-full lg:w-4/5 xl:w-3/4 items-center mt-4">
         <div className="flex flex-col w-4/5 mr-3 text-xl">
@@ -23,19 +26,21 @@ function About() {
             </p>
             <p> Here are a few technologies I've been working with recently </p>
           </div>
-          <div className="flex justify-center">
-            <ul>
-              <li> JavaSCript </li>
+          <div className="fontSourceCode flex justify-center items-center">
+            <ul className="mx-2 md:mx-4 list-disc">
               <li> React </li>
               <li> Angular </li>
-              <li> HTML5 </li>
+              <li> JavaSCript </li>
             </ul>
-
-            <ul>
-              <li> CSS3 </li>
-              <li> Bootstraps </li>
+            <ul className="mx-2 md:mx-4 list-disc">
+              <li> Typescript </li>
+              <li> APIs </li>
               <li> Java </li>
-              <li> Node.js </li>
+            </ul>
+            <ul className="mx-2 md:mx-4 list-disc">
+              <li> Tailwinds </li>
+              <li> Bootstraps </li>
+              <li> CSS3 </li>
             </ul>
           </div>
         </div>
