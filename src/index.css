@@ -18,7 +18,7 @@
 }
 
 #projects {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     #b6e2d3,
     #c8e3cc,
@@ -32,6 +32,54 @@
     #e7bfbe,
     #e0b3b7,
     #d8a7b1
+  ); */
+  /* background-image: linear-gradient(
+    to bottom,
+    #fae8e0,
+    #f4dcd4,
+    #efcfca,
+    #e9c3c1,
+    #e2b7b9,
+    #e1aeb3,
+    #e0a6ae,
+    #df9da9,
+    #e395a3,
+    #e88d9c,
+    #eb8595,
+    #ef7c8e
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    #fae8e0,
+    #f4dcd4,
+    #efcfca,
+    #e9c3c1,
+    #e2b7b9,
+    #e2b6b2,
+    #e0b5ab,
+    #deb4a4,
+    #d8c0a2,
+    #cccdab,
+    #bfd9bc,
+    #b6e2d3
+  );
+}
+
+#footer {
+  background-image: linear-gradient(
+    to bottom,
+    #b6e2d3,
+    #bfd9bc,
+    #cccdab,
+    #d8c0a2,
+    #deb4a4,
+    #deb4a4,
+    #deb4a4,
+    #deb4a4,
+    #d8c0a2,
+    #cccdab,
+    #bfd9bc,
+    #b6e2d3
   );
 }
 

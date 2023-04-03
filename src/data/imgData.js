@@ -1,10 +1,11 @@
 import hotelProject from "../img/hotelProject.jpg";
 import connectFour from "../img/connectFour.jpg";
 import pokemon from "../img/Pokemon.jpg";
-import starWars from "../img/starWars.jpg";
+// import starWars from "../img/starWars.jpg";
 import foodRandom from "../img/random.jpg";
 import disney from "../img/disney.jpg";
 import barSite from "../img/barSite.jpg";
+import starWars from "../img/starWar.jpg";
 
 export const imgData = [
   {
@@ -52,7 +53,7 @@ export const imgData = [
     src: pokemon,
     alt: "pokemon.img",
     title: "Pokemon Card Game",
-    programs: "HTML5 | CSS3 | Bootstraps | JavaScript | VS Code",
+    programs: "HTML5 | CSS3 | Bootstraps | JavaScript | HTML DOM",
     github: "https://github.com/tmp03099/memory-card-game",
     link: "https://tmp03099.github.io/memory-card-game/",
   },

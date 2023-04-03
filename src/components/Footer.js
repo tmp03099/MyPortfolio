@@ -4,6 +4,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import Card from "react-bootstrap/Card";
+import SocialMedia from "./SocialMedia";
 
 function Footer() {
   const CustomToggle = ({ children, eventKey }) => {
@@ -18,7 +19,10 @@ function Footer() {
     );
   };
   return (
-    <section className="flex justify-center items-center w-screen h-auto mt-5">
+    <section
+      id="footer"
+      className="flex flex-col justify-center items-center w-screen h-auto pt-5"
+    >
       <div className="border-4 outline-2 bg-gray-900 shadow-2xl rounded-3xl p-12 text-white text-center">
         <div>
           <h3 className="text-amber-300 mb-4">
@@ -63,6 +67,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <SocialMedia />
     </section>
   );
 }

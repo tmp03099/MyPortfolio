@@ -1,4 +1,5 @@
 import techImg from "../img/EF7C8E.jpg";
+import { Link as LinkScroll } from "react-scroll";
 
 function Home({ quote }) {
   return (
@@ -26,7 +27,9 @@ function Home({ quote }) {
         "{quote.quote}"
       </p>
       <button className="mt-5 text-lg fontSourceCode ring-2 ring-emerald-400 p-2 px-3 rounded-2xl">
-        About me
+        <LinkScroll activeClass="active" smooth spy to="about" duration={100}>
+          About me
+        </LinkScroll>
       </button>
     </section>
   );
