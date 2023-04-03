@@ -7,7 +7,7 @@ function Work() {
       className="flex flex-col w-screen h-auto items-center"
       id="projects"
     >
-      <h2 className="text-left lg:text-5xl p-5">Some Things I've Built</h2>
+      <h2 className="text-left lg:text-5xl m-3">Some Things I've Built</h2>
       <FeaturedProject />
       <Projects />
     </section>

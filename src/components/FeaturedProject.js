@@ -8,7 +8,7 @@ function FeaturedProject() {
   const [fProject, setFProject] = useState([]);
 
   const { width } = useViewport();
-  const small = 620;
+  const small = 650;
 
   useEffect(() => {
     const loadProject = () => {
@@ -19,7 +19,7 @@ function FeaturedProject() {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center">
+    <section className="flex flex-col justify-center items-center">
       {fProject.map((item, idx) =>
         width < small ? (
           <FeaturedProjectSmall project={item} key={idx} />

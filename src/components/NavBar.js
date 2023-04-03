@@ -51,6 +51,15 @@ function NavBar() {
               >
                 Work
               </LinkScroll>
+              <LinkScroll
+                className="text-xl mx-4 font-bold no-underline text-amber-300"
+                smooth
+                spy
+                to="contact"
+                duration={100}
+              >
+                Contact
+              </LinkScroll>
               <a
                 className="text-xl mx-4 font-bold no-underline text-amber-300"
                 href="https://docs.google.com/document/d/e/2PACX-1vS_GmGWxfwTtaWRePRdwUNTErFMZ5T2t_ajXwj63sVPjcfY9EvoMG344MRMR2ELnQ/pub"

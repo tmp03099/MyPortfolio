@@ -20,10 +20,10 @@ function Footer() {
   };
   return (
     <section
-      id="footer"
+      id="contact"
       className="flex flex-col justify-center items-center w-screen h-auto pt-5"
     >
-      <div className="border-4 outline-2 bg-gray-900 shadow-2xl rounded-3xl p-12 text-white text-center">
+      <div className="border-4 outline-2 bg-gray-900 shadow-2xl rounded-3xl p-12 text-white text-center w-4/5">
         <div>
           <h3 className="text-amber-300 mb-4">
             Interested in working together?

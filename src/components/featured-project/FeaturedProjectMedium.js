@@ -22,8 +22,8 @@ function FeaturedProjectMedium({ project }) {
         />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-            <stop stopColor="#7775D6" />
-            <stop offset={1} stopColor="#E935C1" />
+            <stop stopColor="#77D777" />
+            <stop offset={1} stopColor="#3fbbcf" />
           </radialGradient>
         </defs>
       </svg>
@@ -46,7 +46,7 @@ function FeaturedProjectMedium({ project }) {
         <div className="fontIncon lg:text-lg description">
           {project.description}
         </div>
-        <div className="fontIncon my-4">{project.programs}</div>
+        <div className="fontIncon my-4 text-cyan-400">{project.programs}</div>
         <ul className="flex list-none text-2xl">
           <li>
             <a href={project.github} className="text-white">

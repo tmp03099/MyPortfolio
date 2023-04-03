@@ -9,13 +9,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { SiTypescript } from "react-icons/si";
 import { TbApi, TbBrandTailwind, TbDatabase } from "react-icons/tb";
+import Carousel from "react-bootstrap/Carousel";
 
 function About() {
   return (
-    <section
-      id="about"
-      className="w-screen h-auto lg:h-screen flex flex-col items-center"
-    >
+    <section id="about" className="w-screen h-auto flex flex-col items-center">
       <h2 className="text-left lg:text-5xl ">About Me</h2>
       <div className="flex flex-col lg:flex-row w-full lg:w-4/5 xl:w-3/4 items-center mt-4">
         <div className="flex flex-col w-4/5 mr-3 text-xl">
@@ -36,41 +34,6 @@ function About() {
               different web app and apply the backend in there.
             </p>
           </div>
-          <div className="fontSourceCode flex justify-center items-center">
-            <ul className="mx-2 md:mx-4 list-disc">
-              <li>
-                <FontAwesomeIcon icon={faReact} />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngular} />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faJsSquare} />
-              </li>
-            </ul>
-            <ul className="mx-2 md:mx-4 list-disc">
-              <li>
-                <SiTypescript />
-              </li>
-              <li>
-                <TbApi />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faJava} />
-              </li>
-            </ul>
-            <ul className="mx-2 md:mx-4 list-disc">
-              <li>
-                <TbBrandTailwind />
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faBootstrap} />
-              </li>
-              <li>
-                <TbDatabase />
-              </li>
-            </ul>
-          </div>
         </div>
         <div className="flex m-4  justify-center">
           <img
@@ -79,6 +42,49 @@ function About() {
             className="border-opacity-75 rounded-full border-yellow-300 border-dashed w-6/12  lg:mb-6 xl:mb-0 lg:w-full  lg:h-full"
           />
         </div>
+      </div>
+      <div className="w-4/5 p-2">
+        <Carousel className="p-5">
+          <Carousel.Item>
+            <div className="flex">
+              <FontAwesomeIcon
+                icon={faReact}
+                className="text-3xl md:text-6xl text-sky-400 w-full "
+              />
+
+              <FontAwesomeIcon
+                icon={faAngular}
+                className="text-3xl md:text-6xl text-red-600 w-full "
+              />
+
+              <FontAwesomeIcon
+                icon={faJsSquare}
+                className="text-3xl md:text-6xl text-yellow-500 w-full"
+              />
+
+              <SiTypescript className="text-3xl md:text-6xl text-blue-600 w-full" />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="flex">
+              <TbApi className="text-4xl md:text-6xl text-rose-500 w-full" />
+
+              <FontAwesomeIcon
+                icon={faJava}
+                className="text-3xl md:text-6xl text-cyan-700 w-full"
+              />
+
+              <TbBrandTailwind className="text-3xl md:text-6xl text-sky-500 w-full" />
+
+              <FontAwesomeIcon
+                icon={faBootstrap}
+                className="text-3xl md:text-6xl text-violet-600  w-full"
+              />
+
+              <TbDatabase className="text-3xl md:text-6xl text-sky-700 w-full " />
+            </div>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </section>
   );
