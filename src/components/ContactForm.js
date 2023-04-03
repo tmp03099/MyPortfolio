@@ -1,4 +1,11 @@
+import Alert from "react-bootstrap/Alert";
+
 function ContactForm() {
+  const handleClick = () => {
+    <Alert key="success" variant="success">
+      You are successfully to submit the contact form!
+    </Alert>;
+  };
   return (
     <form className="w-full max-w-sm">
       <div className="md:flex md:items-center mb-6">
@@ -60,6 +67,7 @@ function ContactForm() {
       <div className="flex items-center justify-center">
         <div className="md:w-2/3">
           <button
+            onClick={handleClick}
             className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
             type="button"
           >

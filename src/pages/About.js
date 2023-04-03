@@ -1,9 +1,20 @@
 import avatarImg from "../img/avatar.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faAngular,
+  faJsSquare,
+  faJava,
+  faBootstrap,
+} from "@fortawesome/free-brands-svg-icons";
+import { SiTypescript } from "react-icons/si";
+import { TbApi, TbBrandTailwind, TbDatabase } from "react-icons/tb";
+
 function About() {
   return (
     <section
       id="about"
-      className="w-screen md:h-screen flex flex-col items-center"
+      className="w-screen h-auto lg:h-screen flex flex-col items-center"
     >
       <h2 className="text-left lg:text-5xl ">About Me</h2>
       <div className="flex flex-col lg:flex-row w-full lg:w-4/5 xl:w-3/4 items-center mt-4">
@@ -24,23 +35,40 @@ function About() {
               friendly interface. I also recently working with React to build
               different web app and apply the backend in there.
             </p>
-            <p> Here are a few technologies I've been working with recently </p>
           </div>
           <div className="fontSourceCode flex justify-center items-center">
             <ul className="mx-2 md:mx-4 list-disc">
-              <li> React </li>
-              <li> Angular </li>
-              <li> JavaSCript </li>
+              <li>
+                <FontAwesomeIcon icon={faReact} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faAngular} />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faJsSquare} />
+              </li>
             </ul>
             <ul className="mx-2 md:mx-4 list-disc">
-              <li> Typescript </li>
-              <li> APIs </li>
-              <li> Java </li>
+              <li>
+                <SiTypescript />
+              </li>
+              <li>
+                <TbApi />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faJava} />
+              </li>
             </ul>
             <ul className="mx-2 md:mx-4 list-disc">
-              <li> Tailwinds </li>
-              <li> Bootstraps </li>
-              <li> CSS3 </li>
+              <li>
+                <TbBrandTailwind />
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faBootstrap} />
+              </li>
+              <li>
+                <TbDatabase />
+              </li>
             </ul>
           </div>
         </div>
@@ -48,7 +76,7 @@ function About() {
           <img
             src={avatarImg}
             alt="avatar.img"
-            className="border-opacity-75 rounded-full border-yellow-300 border-dashed w-6/12 md:w-7/12  lg:mb-6 xl:mb-0 lg:w-full  lg:h-full"
+            className="border-opacity-75 rounded-full border-yellow-300 border-dashed w-6/12  lg:mb-6 xl:mb-0 lg:w-full  lg:h-full"
           />
         </div>
       </div>

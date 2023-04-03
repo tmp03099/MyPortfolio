@@ -21,7 +21,7 @@ function DetailProject({ project }) {
       >
         <img
           src={project.src}
-          style={{ width: 400, height: 320 }}
+          style={{ width: 300, height: 250 }}
           alt={project.alt}
         />
         <div className="flex flex-col justify-between item-center w-full h-full transition duration-150 ease-in-out top-0 left-0 absolute border-2 border-separate border-slate-700">
@@ -31,10 +31,10 @@ function DetailProject({ project }) {
               (hover ? " hover" : "")
             }
           >
-            <div className="fontIncon my-5 text-black text-2xl font-extrabold">
+            <div className="fontIncon mt-4 mb-2 text-black text-2xl font-extrabold">
               {project.title}
             </div>
-            <span className="mb-3 text-rose-500 text-xl font-bold">
+            <span className="mb-4 text-rose-500 text-center text-lg font-bold">
               {project.programs}
             </span>
           </div>
@@ -45,7 +45,7 @@ function DetailProject({ project }) {
             }
           >
             <div className="mb-5">
-              <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 text-lg text-white ">
+              <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 text-md text-white ">
                 CHECK OUT
               </button>
             </div>
