@@ -5,8 +5,8 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 function FeaturedProjectMedium({ project }) {
   return (
     <div
-      className="flex project-1 py-5 m-5 justify-center 
-      relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:pt-0"
+      className="projectBg flex project-1 py-5 m-5 justify-center 
+      relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:pt-0"
     >
       <svg
         viewBox="0 0 1024 1024"
@@ -22,8 +22,8 @@ function FeaturedProjectMedium({ project }) {
         />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-            <stop stopColor="#77D777" />
-            <stop offset={1} stopColor="#3fbbcf" />
+            <stop stopColor="#24B391" />
+            <stop offset={1} stopColor="#1A7E70" />
           </radialGradient>
         </defs>
       </svg>

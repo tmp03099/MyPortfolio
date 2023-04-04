@@ -46,6 +46,10 @@
   );
 }
 
+.projectBg {
+  background-color: #220814;
+}
+
 /* Font family */
 h5,
 .fontSyne {
