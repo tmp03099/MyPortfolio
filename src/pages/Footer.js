@@ -1,10 +1,10 @@
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import Card from "react-bootstrap/Card";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../components/SocialMedia";
 
 function Footer() {
   const CustomToggle = ({ children, eventKey }) => {

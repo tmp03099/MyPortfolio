@@ -13,7 +13,7 @@ function Home({ quote }) {
         Frontend Developer | Software Developer
       </h1>
       <div className="fontVT text-center text-lg md:text-xl lg:text-3xl">
-        I am build and desgin things for website with user friendly interface
+        Always build and desgin website with user friendly interface in mind
       </div>
       <br />
       <img
