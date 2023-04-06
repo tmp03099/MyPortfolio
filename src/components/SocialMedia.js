@@ -7,8 +7,11 @@ function SocialMedia() {
   return (
     <section className="w-screen h-auto sticky top-0 z-auto">
       <ul>
-        <li>
-          <a className="text-3xl text-black" href="https://github.com/tmp03099">
+        <li className="">
+          <a
+            className="text-3xl text-black scale-y-125"
+            href="https://github.com/tmp03099"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>

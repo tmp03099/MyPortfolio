@@ -68,6 +68,7 @@ function Footer() {
         </div>
       </div>
       <SocialMedia />
+      <div>© My Phung Tieu</div>
     </section>
   );
 }

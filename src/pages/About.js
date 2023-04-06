@@ -13,7 +13,10 @@ import Carousel from "react-bootstrap/Carousel";
 
 function About() {
   return (
-    <section id="about" className="w-screen h-auto flex flex-col items-center">
+    <section
+      id="about"
+      className="w-screen h-auto lg:min-h-screen flex flex-col items-center"
+    >
       <h2 className="text-left lg:text-5xl ">About Me</h2>
       <div className="flex flex-col lg:flex-row w-full lg:w-4/5 xl:w-3/4 items-center mt-4">
         <div className="flex flex-col w-4/5 mr-3 text-lg lg:text-2xl">

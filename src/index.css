@@ -65,7 +65,8 @@ h3,
   font-family: "Ribeye";
 }
 
-h1 {
+h1,
+.fontCoiny {
   font-family: "Coiny";
 }
 
@@ -94,4 +95,25 @@ p,
 .storeImg:hover .captionImg {
   visibility: visible;
   opacity: 1;
+}
+
+/* Hover effect  */
+.hoverEffect {
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+.hoverEffect span {
+  transition: 0.5s ease-out;
+}
+.hoverEffect:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+.hoverEffect:hover span:nth-child(3) {
+  margin-left: 30px;
+}
+.hoverEffect:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }

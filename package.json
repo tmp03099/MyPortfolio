@@ -14,6 +14,7 @@
     "bootstrap": "^5.2.3",
     "deepai": "^1.0.21",
     "formik": "^2.2.9",
+    "framer-motion": "^10.10.0",
     "install": "^0.13.0",
     "next-gallery": "^1.2.1",
     "npm": "^9.6.2",

@@ -9,7 +9,7 @@ function NavBar() {
     <>
       <Navbar sticky="top" expand={"md"} className="nav flex item-center">
         <Container fluid>
-          <Navbar.Brand href="https://main--stellular-lamington-d5312c.netlify.app/">
+          <Navbar.Brand href="https://tmpportfolio.netlify.app/">
             <img
               src={logoImg}
               alt="logo.img"
