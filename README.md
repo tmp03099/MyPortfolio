@@ -22,12 +22,6 @@
 
 ## Getting Started 
 
-### Installation
-- Clone the repo
-```
-git clone https://github.com/tmp03099/connect-four-game.github.io
-```
-
 ### Available Scripts
 
 In the project directory, you can run:
