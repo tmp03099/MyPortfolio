@@ -117,3 +117,24 @@ p,
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    font-size: 100px;
+    transform: translateX(-100%);
+    filter: blur(1vmin);
+  }
+  50% {
+    opacity: 1;
+    font-size: 50px;
+    transform: translateX(0%);
+    filter: blur(0.02vmin);
+  }
+  100% {
+    opacity: 0;
+    font-size: 100px;
+    transform: translateX(100%);
+    filter: blur(1vmin);
+  }
+}
