@@ -1,4 +1,3 @@
-import { easeInOut } from "framer-motion";
 import { useEffect } from "react";
 
 function TextAnimation() {
@@ -9,38 +8,38 @@ function TextAnimation() {
 
     const countinue = () => {
       // countinue looping
-
       if (arrayIdx < array.length) {
         fadeIn();
-        arrayIdx++;
+        arrayIdx++; // loop the next word
       } else {
         arrayIdx = 0;
         fadeIn();
       }
-      // countinue();
     };
 
     const fadeIn = () => {
       // get Element by Id
-      const div = document.getElementById("text-store");
-      while (div.firstChild) {
-        div.removeChild(div.firstChild);
+      const arrSpan = document.getElementById("text-store");
+
+      //remove the previous word
+      while (arrSpan.firstChild) {
+        arrSpan.removeChild(arrSpan.firstChild);
       }
 
-      //create element
+      //create element span for each word
       const span = document.createElement("span");
       span.id = "text-animation";
 
       span.style.animation = "fadeInOut 3s ease-in-out";
-      span.style.position = "absolute";
-      console.log(div);
-
+      span.style.position = "absolute"; //need set up position
+      //set the text content equal each word
       span.textContent = array[arrayIdx];
 
-      div.appendChild(span);
+      //append each word span to the parent arrSpan
+      arrSpan.appendChild(span);
 
       setTimeout(() => {
-        span.remove();
+        // span.remove();
         countinue();
       }, 3000);
     };
