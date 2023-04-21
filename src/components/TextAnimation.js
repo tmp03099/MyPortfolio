@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import FramerMotion from "./FramerMotion";
 
 function TextAnimation() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function TextAnimation() {
       const span = document.createElement("span");
       span.id = "text-animation";
 
-      span.style.animation = "fadeInOut 3s ease-in-out";
+      // span.style.animation = "fadeInOut 3s ease-in-out";
       span.style.position = "absolute"; //need set up position
       //set the text content equal each word
       span.textContent = array[arrayIdx];
@@ -39,7 +40,7 @@ function TextAnimation() {
       arrSpan.appendChild(span);
 
       setTimeout(() => {
-        // span.remove();
+        span.remove();
         countinue();
       }, 3000);
     };
@@ -48,9 +49,14 @@ function TextAnimation() {
   }, []);
 
   return (
-    <div className="slogan">
-      <span>Build a website </span>
-      <span id="text-store"></span>
+    <div className="slogan ml-2 grid grid-cols-2 justify-center content-center items-center ">
+      <span>
+        <FramerMotion slogan={`Build a Website`} />
+      </span>
+      <span
+        id="text-store"
+        className="smAnimation flex items-center content-center"
+      ></span>
     </div>
   );
 }

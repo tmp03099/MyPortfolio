@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
-function FramerMotion({ text }) {
-  const words = text.split("");
+function FramerMotion({ slogan }) {
+  const words = slogan.split("");
 
   // Variants for container of words
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
+      transition: { staggerChildren: 0.15, delayChildren: 0.04 * i },
     }),
   };
 
@@ -36,16 +36,18 @@ function FramerMotion({ text }) {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+      className="flex justify-end"
+      style={{ overflow: "hidden" }}
       variants={container}
       initial="hidden"
       animate="visible"
     >
       {words.map((word, index) => (
         <motion.span
-          className="fontCoiny mb-3 text-sm md:text-3xl lg:text-4xl"
+          // className="fontCoiny mb-3 md:my-3 text-xl md:text-4xl lg:text-5xl"
+          className="md:my-4 text-lg md:text-3xl lg:text-4xl"
           variants={child}
-          style={{ marginRight: "5px" }}
+          style={{ marginRight: "4px" }}
           key={index}
         >
           {word}
