@@ -99,12 +99,12 @@ p,
 
 /* Hover effect  */
 .hoverEffect {
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   cursor: pointer;
 }
 
 .hoverEffect span {
-  transition: 0.5s ease-out;
+  transition: 0.8s ease-out;
 }
 .hoverEffect:hover span:nth-child(1) {
   margin-right: 30px;
@@ -116,4 +116,62 @@ p,
 .hoverEffect:hover span {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    font-size: 150px;
+    transform: translateX(-100%);
+    filter: blur(1vmin);
+  }
+  50% {
+    opacity: 1;
+    font-size: 60px;
+    transform: translateX(0%);
+    filter: blur(0.02vmin);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+  100% {
+    opacity: 0;
+    font-size: 150px;
+    transform: translateX(100%);
+    filter: blur(1vmin);
+  }
+}
+
+@keyframes fadeInOutSmall {
+  0% {
+    opacity: 0;
+    font-size: 100px;
+    transform: translateX(-100%);
+    filter: blur(1vmin);
+  }
+  50% {
+    opacity: 1;
+    font-size: 30px;
+    transform: translateX(0%);
+    filter: blur(0.02vmin);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+  100% {
+    opacity: 0;
+    font-size: 100px;
+    transform: translateX(100%);
+    filter: blur(1vmin);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .smAnimation {
+    animation: fadeInOutSmall 3s ease-in-out infinite;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .smAnimation {
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
 }
