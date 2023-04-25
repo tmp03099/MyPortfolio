@@ -5,7 +5,6 @@ function TextAnimation() {
   useEffect(() => {
     const array = ["Simple", "Creative", "Easy to Use", "Effective"];
     let arrayIdx = 0;
-    let letterIdx = 0;
 
     const countinue = () => {
       // countinue looping
