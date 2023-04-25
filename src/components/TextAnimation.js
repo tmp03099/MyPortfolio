@@ -3,7 +3,7 @@ import FramerMotion from "./FramerMotion";
 
 function TextAnimation() {
   useEffect(() => {
-    const array = ["Simple", "Creative", "Easy to Use", "Effective"];
+    const array = ["Simple", "Creative", "Impressive", "Effective"];
     let arrayIdx = 0;
 
     const countinue = () => {
