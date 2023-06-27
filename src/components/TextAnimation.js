@@ -22,8 +22,8 @@ function TextAnimation() {
       const arrSpan = document.getElementById("text-store");
 
       //remove the previous word
-      while (arrSpan.firstChild) {
-        arrSpan.removeChild(arrSpan.firstChild);
+      while (arrSpan.firstElementChild) {
+        arrSpan.removeChild(arrSpan.firstElementChild);
       }
 
       //create element span for each word

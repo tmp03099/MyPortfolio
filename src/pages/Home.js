@@ -41,7 +41,7 @@ function Home() {
         </div>
         <div className="flex flex-column justify-center items-center w-3/4">
           <p className="fontSyne text-md lg:text-2xl text-center">
-            "{quote.quote}"
+            {/* {quote.quote} */}
           </p>
           <button className="mt-5 text-lg fontSourceCode ring-2 ring-emerald-400 p-2 px-3 rounded-2xl">
             <LinkScroll
