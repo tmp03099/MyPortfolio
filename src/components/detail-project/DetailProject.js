@@ -48,7 +48,7 @@ function DetailProject({ project }) {
               <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 ">
                 <a
                   href={project.link}
-                  className="underline text-white text-md "
+                  className="no-underline text-white text-md "
                 >
                   CHECK OUT
                 </a>
