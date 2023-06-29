@@ -45,8 +45,13 @@ function DetailProject({ project }) {
             }
           >
             <div className="mb-5">
-              <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 text-md text-white ">
-                CHECK OUT
+              <button className="fontSourceCode rounded-lg hover:rounded-xl bg-rose-500 py-2 px-3 ">
+                <a
+                  href={project.link}
+                  className="underline text-white text-md "
+                >
+                  CHECK OUT
+                </a>
               </button>
             </div>
           </div>

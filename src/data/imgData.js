@@ -1,7 +1,7 @@
 import hotelProject from "../img/hotelProject.jpg";
 import connectFour from "../img/connectFour.jpg";
 import pokemon from "../img/Pokemon.jpg";
-// import starWars from "../img/starWars.jpg";
+import planner from "../img/planner.jpg";
 import foodRandom from "../img/random.jpg";
 import disney from "../img/disney.jpg";
 import barSite from "../img/barSite.jpg";
@@ -10,6 +10,17 @@ import starWars from "../img/starWar.jpg";
 export const imgData = [
   {
     top: true,
+    src: planner,
+    alt: "plannerApp.img",
+    title: "Travel Planner",
+    programs: "React Node.js MongoDB JSON Tailwinds ",
+    description:
+      "A version website planner for traveller that help them manage and planning their trip is eaiser and faster.",
+    github: "https://github.com/tmp03099/Travel-Planner",
+    link: "https://travel-planner-api.onrender.com",
+  },
+  {
+    top: false,
     src: hotelProject,
     alt: "hotel.img",
     title: "Hotel Booking",
