@@ -52,7 +52,9 @@ function Footer() {
           </div>
           <p className="my-4">
             I'm currently looking for the opportunity to join a team of
-            developer. If you think I might be a good fit, please contact me.
+            developer. If you think I might be a good fit, please contact me via
+            <br></br>
+            tmp03099@gmail.com or 412-626-9130.
           </p>
         </div>
         <div className="flex items-center">
