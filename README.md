@@ -2,7 +2,7 @@
 > This is my web portfolio to introduce my self
 
 ## About
-[My Porfolio](https://tmpportfolio.netlify.app/) - This is a deployment link for my portfolio website
+[My Porfolio](https://tmp-portfolio.onrender.com/) - This is a deployment link for my portfolio website
 
 ### Main Features
 - Responsive Design
@@ -60,7 +60,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information
 My Phung Tieu - [LinkedIn](https://www.linkedin.com/in/my-phung-tieu-0bba22219/) - [Github](https://github.com/tmp03099):heart_eyes:
 
 
-Project Link - [My Portfolio](https://tmpportfolio.netlify.app/)
+Project Link - [My Portfolio](https://tmp-portfolio.onrender.com/)
 
 ## Acknowledgements
 - [API Qoute](https://animechan.vercel.app/)
